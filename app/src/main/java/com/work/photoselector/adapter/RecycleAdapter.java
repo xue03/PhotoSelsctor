@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -13,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.work.photoselector.R;
 import com.work.photoselector.bean.ImageItem;
-import com.work.photoselector.view.SquareImageView;
 
 import java.util.List;
 
@@ -72,6 +70,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewHold
         } else if (getItemViewType(position) == TYPE_IMAGE) {
 
             Glide.with(context).load(imageItemList.get(position).path).into(holder.images);
+
             holder.images.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

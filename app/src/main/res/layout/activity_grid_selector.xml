@@ -4,10 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DD9A9A9A"
+    android:fitsSystemWindows="true"
     tools:context=".activity.GridSelectorActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/activity_actionbar" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/rl"
+        app:layout_constraintTop_toBottomOf="@id/actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FF9800"
+            android:text="预览"
+            android:textColor="#FF9800" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:background="#8BC34A"
+            android:padding="5dp"
+            android:text="完成(0/9)"
+            android:textColor="#FAFCFD" />
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

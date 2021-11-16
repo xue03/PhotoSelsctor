@@ -9,6 +9,7 @@
     <Button
         android:id="@+id/btn_showPhoto"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
         android:text="获取系统图片展示到列表"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

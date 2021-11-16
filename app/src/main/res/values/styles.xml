@@ -1,10 +1,14 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="android:statusBarColor">#00ffffff</item>-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+<!--        <item name="android:windowTranslucentStatus">false</item>&lt;!&ndash;页面拉伸到状态栏顶部&ndash;&gt;-->
+<!--        <item name="android:windowTranslucentNavigation">true</item>&lt;!&ndash;页面拉伸到虚拟按键底部&ndash;&gt;-->
     </style>
 
 </resources>
